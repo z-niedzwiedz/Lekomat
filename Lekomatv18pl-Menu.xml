@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<RootMenu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Config IdPrefix="mnuCmd" VarPrefix="LekomatMenu" UseNumbering="false" IncludeNumberHierarchy="false"
+          MaxNameLen="12" MenuBackFirstItem="false" BackText="Powrot" ExitText="Wyjscie" AvrProgMem="true" />
+  <MenuItems>
+    <Item Id="LidsRoot" Name="Pokrywy">
+      <MenuItems>
+        <Item Id="Lid1Root" Name="Pokrywa L">
+          <MenuItems>
+            <Item Id="Lid1OpenClose" Name="Zmiana stanu" />
+            <Item Id="Lid1ForceOpen" Name="Wymusz. otw." />
+            <Item Id="Lid1ForceClose" Name="Wymusz. zam." />
+          </MenuItems>
+        </Item>
+        <Item Id="Lid2Root" Name="Pokrywa P">
+          <MenuItems>
+            <Item Id="Lid2OpenClose" Name="Zmiana stanu" />
+            <Item Id="Lid2ForceOpen" Name="Wymusz. otw." />
+            <Item Id="Lid2ForceClose" Name="Wymusz. zam." />
+          </MenuItems>
+        </Item>
+      </MenuItems>
+    </Item>
+    <Item Id="SettingsRoot" Name="Ustawienia">
+      <MenuItems>
+        <Item Id="AlarmsRoot" Name="Alarmy">
+          <MenuItems>
+            <Item Id="Alarm1Root" Name="Alarm lewy">
+              <MenuItems>
+                <Item Id="A1Hour" Name="Godzina"/>
+                <Item Id="A1Minute" Name="Minuta"/>
+                <Item Id="A1Enable" Name="Wlaczony?"/>
+              </MenuItems>
+            </Item>
+            <Item Id="Alarm2Root" Name="Alarm prawy">
+              <MenuItems>
+                <Item Id="A2Hour" Name="Godzina"/>
+                <Item Id="A2Minute" Name="Minuta"/>
+                <Item Id="A2Enable" Name="Wlaczony?"/>
+              </MenuItems>
+            </Item>
+          </MenuItems>
+        </Item>
+        <Item Id="TimeSetRoot" Name="Zegar">
+          <MenuItems>
+            <Item Id="TimeSetYear" Name="Rok" />
+            <Item Id="TimeSetMonth" Name="Miesiac" />
+            <Item Id="TimeSetDay" Name="Dzien" />
+            <Item Id="TimeSetHour" Name="Godzina" />
+            <Item Id="TimeSetMinute" Name="Minuta" />
+          </MenuItems>
+        </Item>
+        <Item Id="LCDSetRoot" Name="Ekran LCD">
+          <MenuItems>
+            <Item Id="LCDSetBack" Name="Podswietl." />
+            <Item Id="LCDSetContrast" Name="Kontrast" />
+          </MenuItems>
+        </Item>
+        <Item Id="Feeder1SensorsCalibration" Name="Czujniki L" />
+        <Item Id="Feeder2SensorsCalibration" Name="Czujniki P" />
+        <Item Id="LoadConf" Name="Wczyt.konfig"/>
+        <Item Id="SaveConf" Name="Zapis konfig"/>
+        <Item Id="FactoryReset" Name="Ustaw. fabr."/>
+      </MenuItems>
+    </Item>
+    <Item Id="TestsRoot" Name="Testy">
+      <MenuItems>
+        <Item Id="Feeder1TestRoot" Name="Podajnik L">
+          <MenuItems>
+            <Item Id="Feeder1SensorsTest" Name="Czujniki" />
+            <Item Id="Feeder1ServoTest" Name="Serwo" />
+          </MenuItems>
+        </Item>
+        <Item Id="Feeder2TestRoot" Name="Podajnik P">
+          <MenuItems>
+            <Item Id="Feeder2SensorsTest" Name="Czujniki" />
+            <Item Id="Feeder2ServoTest" Name="Serwo" />
+          </MenuItems>
+        </Item>
+        <Item Id="RTCTest" Name="Zegar">
+          <MenuItems>
+            <Item Id="RTCTimeTest" Name="Czas" />
+            <Item Id="RTCBatLevel" Name="Bateria" />
+          </MenuItems>
+        </Item>
+        <Item Id="BuzzerLEDTest" Name="Glosnik/LED" />
+        <Item Id="AckTest" Name="Przycisk" />
+      </MenuItems>
+    </Item>
+  </MenuItems>
+</RootMenu>
