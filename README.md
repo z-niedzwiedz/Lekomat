@@ -4,7 +4,7 @@
 https://www.elektroda.pl/rtvforum/topic3594898.html
 
 ### Wstęp
-Lekomat - urządzenie do dozowania leków Lekomat - urządzenie do dozowania leków
+#### Lekomat - urządzenie do dozowania leków
 Lekomat to urządzenie służące do wydawania osobie niedowidzącej leków o określonych godzinach.
 Pomysł skonstruowania takiego urządzenia podrzuciła mi moja lepsza połówka a powstał z potrzeby chwili - senior będący pod naszą opieką dostał zalecenie otrzymywania leków w porze naszej nieobecności.
 Testowaliśmy wcześniej inne rozwiązanie ale obsługa okazała się zbyt skomplikowana, przyciski małe i nieczytelne a sposób wydawania leków nieprzyjazny dla seniora z niepełnosprawnościami.
@@ -13,11 +13,11 @@ Testowaliśmy wcześniej inne rozwiązanie ale obsługa okazała się zbyt skomp
 Obudowa powstała na bazie drewnianego pudełka do decoupage'u. Składa się z trzech części: boczne są komorami na zasobniki na leki zaś centralna zawiera elektronikę sterującą i elementy wykonawcze (serwomechanizmy odpowiedzialne za otwieranie pokryw komór). Aby to uzyskać przeciąłem pokrywę na trzy części, wzmocniłem je listewkami a do części bocznych dodałem elementy służące do naciskania wyłączników krańcowych. Wszystkie elementy drewniane polakierowałem lakierem bezbarwnym. Ślizgi i przedłużenia ramion serwomechanizmów wyciąłem z laminatu i połączyłem za pomocą sprężyn, zastosowałem nowe zawiasy. Do centralnej części pokrywy przymocowałem boczki wycięte z tworzywa sztucznego i wykorzystałem wewnętrzne rowki pudełka (które oryginalnie służyły jako prowadnice do drewnianych przekładek) aby zamocować centralny moduł na wcisk. Wywierciłem w niej otwory na przycisk oraz buzzer. W dolnej części pudełka wywierciłem otwory na diody sygnalizacyjne, enkoder obrotowy, zasilanie, kabel USB oraz nóżki. Wyciąłem w niej również otwór na wtyczkę taśmową IDC służącą jako złącze dla wyświetlacza, którego czarną obudowę wydrukowałem z PLA. W bocznych komorach umieściłem zielone moduły na zasobniki, również wydrukowane z PLA i wyposażone w naciskane przez kieliszki dźwignie przenoszące nacisk na krańcówki. Jako zasobników na leki użyłem kieliszków do wódki 25 ml firmy Krosno z serii Basic Glass.
 
 ### Elektronika
-### Schemat i PCB:
+#### Schemat i PCB:
 ![Schemat](https://raw.githubusercontent.com/z-niedzwiedz/Lekomat/master/Lekomat%20-%20schemat.PNG)
 ![Płytka](https://raw.githubusercontent.com/z-niedzwiedz/Lekomat/master/Lekomat%20-%20płytka.PNG)
 
-### Spis elementów:
+#### Spis elementów:
 - Arduino Nano 3.0
 - 2 szt. serwo TowerPro MG-996R
 - LCD5110/PCD8544
