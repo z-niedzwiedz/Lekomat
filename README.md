@@ -3,19 +3,20 @@
 
 https://www.elektroda.pl/rtvforum/topic3594898.html
 
-Wstęp
+### Wstęp
 Lekomat - urządzenie do dozowania leków Lekomat - urządzenie do dozowania leków
 Lekomat to urządzenie służące do wydawania osobie niedowidzącej leków o określonych godzinach.
 Pomysł skonstruowania takiego urządzenia podrzuciła mi moja lepsza połówka a powstał z potrzeby chwili - senior będący pod naszą opieką dostał zalecenie otrzymywania leków w porze naszej nieobecności.
 Testowaliśmy wcześniej inne rozwiązanie ale obsługa okazała się zbyt skomplikowana, przyciski małe i nieczytelne a sposób wydawania leków nieprzyjazny dla seniora z niepełnosprawnościami.
 
-Opis konstrukcji
+### Opis konstrukcji
 Obudowa powstała na bazie drewnianego pudełka do decoupage'u. Składa się z trzech części: boczne są komorami na zasobniki na leki zaś centralna zawiera elektronikę sterującą i elementy wykonawcze (serwomechanizmy odpowiedzialne za otwieranie pokryw komór). Aby to uzyskać przeciąłem pokrywę na trzy części, wzmocniłem je listewkami a do części bocznych dodałem elementy służące do naciskania wyłączników krańcowych. Wszystkie elementy drewniane polakierowałem lakierem bezbarwnym. Ślizgi i przedłużenia ramion serwomechanizmów wyciąłem z laminatu i połączyłem za pomocą sprężyn, zastosowałem nowe zawiasy. Do centralnej części pokrywy przymocowałem boczki wycięte z tworzywa sztucznego i wykorzystałem wewnętrzne rowki pudełka (które oryginalnie służyły jako prowadnice do drewnianych przekładek) aby zamocować centralny moduł na wcisk. Wywierciłem w niej otwory na przycisk oraz buzzer. W dolnej części pudełka wywierciłem otwory na diody sygnalizacyjne, enkoder obrotowy, zasilanie, kabel USB oraz nóżki. Wyciąłem w niej również otwór na wtyczkę taśmową IDC służącą jako złącze dla wyświetlacza, którego czarną obudowę wydrukowałem z PLA. W bocznych komorach umieściłem zielone moduły na zasobniki, również wydrukowane z PLA i wyposażone w naciskane przez kieliszki dźwignie przenoszące nacisk na krańcówki. Jako zasobników na leki użyłem kieliszków do wódki 25 ml firmy Krosno z serii Basic Glass.
 
-Elektronika
-Schemat i PCB:
+### Elektronika
+### Schemat i PCB:
+![Schemat](https://github.com/z-niedzwiedz/Lekomat/blob/master/Lekomat%20-%20schemat.PNG?raw=true)
 
-Spis elementów:
+### Spis elementów:
 - Arduino Nano 3.0
 - 2 szt. serwo TowerPro MG-996R
 - LCD5110/PCD8544
@@ -45,10 +46,10 @@ W momencie nadejścia zaprogramowanej godziny Lekomat zaczyna cyklicznie błyska
 
 Lekomat można załadować w prosty sposób: wkładając kieliszek do pustej komory a następnie naciskając górny przycisk. https://youtu.be/iEubPIlIa58
 
-Oprogramowanie
+### Oprogramowanie
 Oczywiście używałem środowiska Arduino. Korzystałem też z edytora menu ale bibliotekę przerobiłem tak aby zamiast dwulinijkowego LCD obsługiwała LCD Nokii. Również obsługę enkodera musiałem zmienić ponieważ podczas normalnego użytkowania następował konflikt z serwomechanizmami (o ile pamiętam chodziło o programowanie timerów w Arduino Nano). Do tego RTClib oraz Adafruit_GFX i Adafruit_PCD8544.
 
 Sporo korzystałem z programów przykładowych dostarczonych wraz z bibliotekami oraz filmów, głównie na kanale educ8s.
 
-Podsumowanie
+### Podsumowanie
 Myślę, że łączny koszt elementów i materiałów zużytych do zbudowania obecnej wersji Lekomatu wyniósł około 200 zł. Zadebiutował on "produkcyjnie" pod sam koniec 2017 roku i po drobnych poprawkach oprogramowania działa po dziś dzień. Jedyną jak na razie usterką (która wystąpiła po ok. roku działania) było uszkodzenie jednego z serwomechanizmów - po jego wymianie urządzenie działa bezproblemowo. Drobną uciążliwością jest niedokładność RTC - w ciągu miesiąca potrafi się rozregulować o kilka minut. Jak się okazało przestawianie zegara jest stosunkowo najczęściej używaną funkcją menu bo na co dzień nie ma potrzeby wchodzenia do niego - większość działań wykorzystuje górny przycisk i czujniki. W planach na niesprecyzowaną przyszłość mam wykonanie kolejnej wersji Lekomatu - tym razem synchronizującej czas z internetem i prezentującej rejestr zdarzeń za pomocą przeglądarki.
