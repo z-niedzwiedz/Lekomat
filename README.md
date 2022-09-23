@@ -15,6 +15,7 @@ Obudowa powstała na bazie drewnianego pudełka do decoupage'u. Składa się z t
 ### Elektronika
 ### Schemat i PCB:
 ![Schemat](https://github.com/z-niedzwiedz/Lekomat/blob/master/Lekomat%20-%20schemat.PNG)
+![Schemat](https://raw.githubusercontent.com/z-niedzwiedz/Lekomat/master/Lekomat%20-%20schemat.PNG)
 
 ### Spis elementów:
 - Arduino Nano 3.0
