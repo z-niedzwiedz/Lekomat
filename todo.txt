@@ -1,0 +1,72 @@
+* = jest
+
+Faza 1 (musi byæ)
+
+*menu
+test czujników
+*test alarmu
+*test serwa
+*otwieranie pokrywy
+*zamykanie pokrywy
+*czytanie zegara z RTC
+*wartoœci domyœlne
+*ekran g³ówny (status, czas nastêpnego alarmu, czas bie¿¹cy, czujniki)
+*wstêpna wersja wydawania leku (alarm i przycisk, bez czujników)
+*p³ytka prototypowa
+*obudowa wstêpna
+
+Faza 2 (powinno byæ)
+*komunikat uniwersalny (z OK lub Tak/Nie)
+*wyœwietlanie/zmiana parametru
+*ustawianie alarmu
+*reset fabryczny
+*zapis/odczyt parametrów z EEPROM
+*ustawianie RTC
+*lepsze wydawanie leków (z otworami na kieliszki i czujnikami)
+*test baterii
+*p³ytka uniwersalna
+*obudowa dopracowana
+*blokada
+*wygodniejsze ustawianie alarmów (zawijanie wartoœci)
+
+Faza 3 (przyda³oby siê)
+*timeout blokady 
+*górny przycisk wychodzi z menu do g³ównego ekranu
+*dŸwiêk dla encodera
+*kalibracja czujników
+*co na starcie (proste info, test wersji/reset fabryczny, test pokryw)
+zapisywanie logów do EEPROM
+czyszczenie EEPROM przy resecie fabrycznym
+wyœwietlanie logów
+jeszcze wygodniejsze ustawianie alarmów
+sygnalizacja niskiego poziomu baterii RTC podczas pracy
+katalog operacji:
+*-S start
+*-A alarm
+*-O otwarcie pokrywy
+*-Z zamkniêcie pokrywy
+*-E b³¹d ruchu pokrywy
+*-W wyjêcie kieliszka
+*-K kieliszek do lekomatu
+*-B wy³¹czenie blokady
+-N niskie napiêcie baterii RTC
+*-R reset fabryczny
+*-T problem z modu³em RTC
+-* znacznik pierwszego pustego rekordu
+
+Faza 4 (fanaberie)
+wiele podajników, wiele alarmów przypisanych do podajników?
+sygnalizacja nieoczekiwanego otwarcia/zamkniêcia (komunikat, zmiana podœwietlenia LCD)?
+timeout menu?
+wolniejszy ruch serwomechanizmów?
+test EEPROM
+test RTC
+test WiFi
+auto kalibracja serwa?
+o programie
+synchronizacja czasu z NTP
+logi na www
+logo na starcie
+p³ytka drukowana
+termometr?
+sygnalizacja g³osowa?
